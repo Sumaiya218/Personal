@@ -595,6 +595,9 @@ footer .container .flow ul li a i:hover{
     
 }
 @media only screen and (max-width: 600px){
+    .home .container .photo , .home .container .text , .about .contain{
+        width: 100%;
+    }
     .home .container .text{
         top: 30px;
     }
