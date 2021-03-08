@@ -24,6 +24,7 @@ footer .container .flow ul li a i , .home .container .text a , .about .text a, .
 }
 .nav .logo{
     float: left;
+    padding-right: 30px;
 }
 
 .nav ul{
@@ -111,7 +112,6 @@ footer .container .flow ul li a i , .home .container .text a , .about .text a, .
     margin: 50px 0px;
 }
 .about .contain .text {
-    width: 85%;
     float: right;
     padding-top: 20px;
 }
@@ -541,7 +541,10 @@ footer .container .flow ul li a i:hover{
 
 /* Responsive on -- All Screens */
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 991px){
+    .nav ul{
+        display: none;
+    }
     .home .container .photo {
         padding-left: 30px;
     }
@@ -554,6 +557,9 @@ footer .container .flow ul li a i:hover{
     }
     .home .container .text h1{
         font-size: 40px;
+    }
+    .about .contain .text h2{
+        font-size: 36px;
     }
     .offers .items .item{
         width: 100%;
@@ -577,24 +583,40 @@ footer .container .flow ul li a i:hover{
         width: 50%;
     }
 }
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 768px){
     .home .container .photo , .home .container .text , .about .contain{
         width: 100%;
     }
     .home .container .photo{
         margin-top: 30px;
     }
+    .about .contain{
+        padding: 30px 0px 10px;
+        margin: 10px 0px;
+    }
     .feedback .head h2{
         font-size: 32px;
+    } 
+    footer .container{
+        display: block;
+        flex-wrap: nowrap;
+    }
+    footer .container .about-me , footer .container .new , footer .container .flow {
+        width: 100%;
+    }
+    footer .container .new , footer .container .flow {
+        padding-left: 0;
+        padding-top: 10px;
     }
     
-    
-    
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 585px){
     
     .home .container .photo , .home .container .text , .about .contain{
         width: 100%;
+    }
+    .about .contain .text{
+        padding-top: 0px;
     }
     .logos .items .logo{
         width: 100%;
